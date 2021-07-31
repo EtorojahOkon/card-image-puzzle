@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Magic puzzle</title>
+    <link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body onload="getScore()" oncontextmenu="false">
+    <button id="time" class="btn btn-lg btn-primary" style="font-weight:bold; float: right; font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">100s</button>
+    <center>
+        <h3>Magic Puzzle</h3>
+        <br/>
+        <span class="error"></span>
+    </center>
+    <div class="scorediv">
+        <button class="btn" onclick="startGame()">Start Game</button>
+
+        <div class="scores">
+            <button class="btn">Instructions</button>
+            <br/>
+            <span id="score">High Score: 55</span>
+        </div>
+    </div>
+    <center>
+        <span id="test"></span>
+        <div class="win" id="win">
+            <center>
+                <h1>Time Up!!</h1>
+            </center>
+            <span id="h-s"></span>
+
+        </div>
+        <div id="gamearea" class="gamearea">
+            <table id='table'>
+                <tr>
+                    <td id="t1">
+                        <img src="img/cover.PNG" class="card" id="1" onclick="getCard(this.id,document.getElementById('in1').value)" />
+                        <input id="in1" value="" hidden/>
+                    </td>
+                    <td id="t2">
+                        <img src="img/cover.PNG" class="card" id="2" onclick="getCard(this.id,document.getElementById('in2').value)" />
+                        <input id="in2" id="1" value="" hidden />
+                    </td>
+                    <td id="t3">
+                        <img src="img/cover.PNG" class="card" id="3" onclick="getCard(this.id,document.getElementById('in3').value)" />
+                        <input id="in3" value="" hidden />
+                    </td>
+                    <td id="t4">
+                        <img src="img/cover.PNG" class="card" id="4" onclick="getCard(this.id,document.getElementById('in4').value)" />
+                        <input id="in4" value="" hidden />
+                    </td>
+                </tr>
+                <tr>
+                    <td id="t5">
+                        <img src="img/cover.PNG" class="card" id="5" onclick="getCard(this.id,document.getElementById('in5').value)" />
+                        <input id="in5" value="" hidden />
+                    </td>
+                    <td id="t6">
+                        <img src="img/cover.PNG" class="card" id="6" onclick="getCard(this.id,document.getElementById('in6').value)" />
+                        <input id="in6" value="" hidden />
+                    </td>
+                    <td id="t7">
+                        <img src="img/cover.PNG" class="card" id="7" onclick="getCard(this.id,document.getElementById('in7').value)" />
+                        <input id="in7" value="" hidden />
+                    </td>
+                    <td id="t8">
+                        <img src="img/cover.PNG" class="card" id="8" onclick="getCard(this.id,document.getElementById('in8').value)" />
+                        <input id="in8" value="" hidden />
+                    </td>
+                </tr>
+                <tr>
+                    <td id="t9">
+                        <img src="img/cover.PNG" class="card" id="9" onclick="getCard(this.id,document.getElementById('in9').value)" />
+                        <input id="in9" value="" hidden />
+                    </td>
+                    <td id="t10">
+                        <img src="img/cover.PNG" class="card" id="10" onclick="getCard(this.id,document.getElementById('in10').value)" />
+                        <input id="in10" value="" hidden />
+                    </td>
+                    <td id="t11">
+                        <img src="img/cover.PNG" class="card" id="11" onclick="getCard(this.id,document.getElementById('in11').value)" />
+                        <input id="in11" value="" hidden />
+                        <td id="t12">
+                            <img src="img/cover.PNG" class="card" id="12" onclick="getCard(this.id,document.getElementById('in12').value)" />
+                            <input id="in12" value="" hidden />
+                        </td>
+                </tr>
+                <tr>
+                    <td id="t13">
+                        <img src="img/cover.PNG" class="card" id="13" onclick="getCard(this.id,document.getElementById('in13').value)" />
+                        <input id="in13" value="" hidden />
+                    </td>
+                    <td id="t14">
+                        <img src="img/cover.PNG" class="card" id="14" onclick="getCard(this.id,document.getElementById('in14').value)" />
+                        <input id="in14" value="" hidden />
+                    </td>
+                    <td id="t15">
+                        <img src="img/cover.PNG" class="card" id="15" onclick="getCard(this.id,document.getElementById('in15').value)" />
+                        <input id="in15" value="" hidden />
+                    </td>
+                    <td id="t16">
+                        <img src="img/cover.PNG" class="card" id="16" onclick="getCard(this.id,document.getElementById('in16').value)" />
+                        <input id="in16" value="" hidden />
+                    </td>
+
+                </tr>
+            </table>
+        </div>
+
+    </center>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>

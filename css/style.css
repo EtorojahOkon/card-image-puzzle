@@ -1,0 +1,72 @@
+.scorediv {
+    padding: 20px;
+}
+
+td {
+    padding: 15px;
+}
+
+.win {
+    display: none;
+    padding: 10px;
+    background-color: green;
+    color: white;
+    margin: 15px;
+}
+
+.card {
+    height: 60px;
+    width: 60px;
+    border: 1px solid black;
+    padding: 9px;
+    color: white;
+    background-color: black;
+    opacity: 0.8;
+}
+
+.card:hover {
+    border: 1px solid white;
+    cursor: pointer;
+}
+
+
+/*.gamearea {
+    border: 1px solid cornflowerblue;
+    margin-top: 70px;
+    margin-left: 150px;
+    margin-right: 150px;
+}*/
+
+.btn {
+    background-color: cornflowerblue;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    padding: 12px;
+}
+
+.btn:hover {
+    background-color: white;
+    color: cornflowerblue;
+    border: 1px solid cornflowerblue;
+    cursor: pointer;
+}
+
+.btn:focus {
+    border: none;
+    outline: none;
+    background-color: cornflowerblue;
+    color: white;
+}
+
+.scores {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    float: right;
+}
+
+@media screen and (max-width:600px) {
+    .gamearea {
+        margin: 15px;
+    }
+}
